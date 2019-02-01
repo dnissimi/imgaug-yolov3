@@ -64,7 +64,7 @@ images = np.array(
 ## Open YOLOv3 annotation file for image
 path, filename = os.path.split(infile)
 (name, fext) = os.path.splitext(filename)
-annotfile = (path + '/' + name + ".txt")
+annotfile = (name + ".txt")
 #print (">> " + annotfile)
 try:
     file = open(annotfile, 'r')
