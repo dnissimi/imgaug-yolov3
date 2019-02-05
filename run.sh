@@ -2,8 +2,8 @@
 
 #source activate cuda10
 
-for filename in *.jpg *.png; do
+for filename in *.png *.jpg; do
     [ -e "$filename" ] || continue
     # ... rest of the loop body
-    python imgaug-yolov3.py 50 $filename
+    python imgaug-yolov3.py 200 $filename
 done
